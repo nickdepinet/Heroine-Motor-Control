@@ -2,16 +2,18 @@
 #include <Sabertooth.h>
 #include <SoftwareSerial.h>
 
-#define rxPin 2
-#define txPin 3
+#define rxPin 4
+#define txPin 5
 char xbGet[2];
 
 SoftwareSerial xbee = SoftwareSerial(rxPin, txPin);
+SoftwareSerial SWSerial(2, 3);
 Sabertooth ST(128); 
 
 void setup()
 {
   Serial.begin(9600);
+  SWSerial.begin(9600);
   pinMode(rxPin, INPUT);
   pinMode(txPin, OUTPUT);
   xbee.begin(9600);  
