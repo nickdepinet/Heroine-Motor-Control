@@ -1,0 +1,7 @@
+README
+
+HEROINE Motor Control Code
+
+This is the code for the teensy board that controls the drive motors on HEROINE.
+
+The Board takes input over serial (either via usb or xbee) and sends commands out to the Sabertooth 2x12 motor controller board
